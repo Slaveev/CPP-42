@@ -5,21 +5,19 @@ int main()
 {
     std::cout << "\033[34mConstructing\033[0m" << std::endl;
     ScavTrap c;
-    ScavTrap d("Savage");
+    ScavTrap d("RoboCop");
 
     std::cout << "\033[34mTesting\033[0m" << std::endl;
     c.attack("CloneTrap");
-    // for (int i = 0; i < 50; i++)
-    // 	c.attack("CloneTrap");
-    c.beRepaired(22);
-    c.takeDamage(21);
-    c.beRepaired(22);
+    c.beRepaired(3);
+    c.takeDamage(2);
+    c.beRepaired(10);
     c.guardGate();
     c.guardGate();
-    d.attack("Savage-clone");
+    d.attack("RoboCop-clone");
     d.takeDamage(101);
     d.takeDamage(15);
-    d.attack("ScavTrap-clone");
+    d.attack("RoboCop-clone");
     std::cout << "\033[34mDeconstructing\033[0m" << std::endl;
     return (0);
 }
